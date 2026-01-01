@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-const port = 5000; 
+require('dotenv').config()
+const PORT = process.env.PORT || 5050;
 
 app.get('/', (req, res)=>{
     res.send('Welcome to landing page...')
@@ -16,7 +17,7 @@ app.get('/login', (req,res)=>{
 app.get('/contact', (req,res)=>{
     res.send('<h2> welcome to contact page<h2>')
 })
-app.listen(port,()=>{
-    console.log(`App is Listening on ${port}`);
+app.listen(PORT,()=>{
+    console.log(`App is Listening on ${PORT}`);
     
 })

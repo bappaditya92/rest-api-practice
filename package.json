@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/bappaditya92/rest-api-practice#readme",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "nodemon": "^3.1.11"
   }
